@@ -1,0 +1,330 @@
+.introRow {
+  text-align: center;
+  /* margin-top: 100px; */
+  /* width: 95%; */
+  /* border-radius: 20px; */
+  margin: auto;
+  margin-top: 100px;
+  /* margin-bottom: 100px; */
+  /* background-color: #5588b1; */
+  background-image: url("/images/home/bg.svg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: fit-content;
+}
+
+.introRow > div > div > span {
+  position: inherit !important;
+}
+
+.introText {
+  width: 90%;
+  margin: auto;
+}
+
+.introText {
+  text-align: right;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 300px;
+  font-size: 28px;
+  line-height: 2rem;
+  color: white;
+}
+.introText > p {
+  margin-bottom: 20px;
+}
+
+.p2 {
+  margin-right: 4vw;
+}
+
+.p3 {
+  margin-right: 10vw;
+}
+
+.p4 {
+  margin-right: 18vw;
+}
+
+.p5 {
+  margin-right: 30vw;
+}
+
+.p6 {
+  margin-right: 45vw;
+  font-size: 12px;
+}
+@media screen and (max-width: 992px) {
+  .introText {
+    font-size: 22px;
+  }
+}
+
+.introImg {
+}
+
+.workshopsRow {
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  /* Added to ensure only the elements inside are affected by the parallax */
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.workshopCol {
+  margin-top: 20px;
+}
+
+.onImage {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  font-size: 10px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #5588b1;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.workshopsImage {
+  background-color: black;
+}
+.onImage a {
+  opacity: 0;
+}
+.onImage h1 {
+  color: white;
+}
+
+.workshopDiv > span,
+.workshopDiv > div > div > span {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.workshopDiv:hover .workshopsImage {
+  opacity: 0.2;
+}
+
+.workshopDiv:hover .onImage {
+  opacity: 1;
+  top: 50%;
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.workshopDiv:hover .onImage h1 {
+  color: #5588b1;
+}
+
+.workshopDiv:hover .onImage a {
+  opacity: 1;
+}
+
+/* basics section */
+
+.basicsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #c4cdd6;
+}
+
+.basicsCategory > h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 500px) {
+  .basicsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Dr Khaled intro section */
+
+.drIntroContainer {
+  max-width: fit-content;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.drIntroTitle {
+  text-align: center;
+
+  margin: auto;
+}
+
+.drIntroTitle > h1 {
+  color: #1a2e49;
+  font-size: 42px;
+  margin-bottom: 0px !important;
+}
+
+.drIntroTitle > h3 {
+  color: #5d85b6;
+  font-size: 32px;
+}
+
+.drIntroContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin: auto;
+  margin-top: 30px;
+}
+
+.drIntroImg {
+  margin-top: auto;
+}
+
+.drIntroDetails {
+  /* margin-top: auto; */
+
+  max-height: 250px;
+}
+
+.drIntroDetailsText {
+  margin-bottom: 20px;
+}
+.drIntroDetailsText > h4 {
+  color: #5d85b6;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+  .drIntroContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .drIntroDetails {
+    order: 2;
+    max-width: auto;
+    max-height: none;
+    margin-top: 20px;
+  }
+}
+
+.homeHeroSection {
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+  height: 85vh;
+
+  background: 
+  /* make both colors the same for a single color
+     change one of the colors for a two-color effect*/ linear-gradient(
+      #1a2e4967,
+      #1a2e4967
+    ),
+    url(/images/home/homewallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeHeroSection > h1 {
+  color: white;
+  font-size: 28px;
+}
+.homeHeroSection > h2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 42px;
+}
+
+.motoContainer {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.motoContainer > h2 {
+  font-size: 32px;
+  color: #5d85b6;
+}
+
+.motoContainer > h1 {
+  font-size: 42px;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: #1a2e49;
+}
+
+.motoContainer > h3 {
+  color: #1a2e49;
+  font-size: 28px;
+}
+
+/* Overall */
+.overallSection {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.overallRow {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  /* margin-top: 25px; */
+}
+
+.overallCol {
+  margin: auto;
+  margin-top: 25px;
+}
+
+.overallContainer {
+  margin: auto;
+  position: relative;
+  max-width: 300px;
+}
+
+.overallContainer:hover > a > .overallCardTitle > h1 {
+  font-size: 32px;
+  transition: 0.2s;
+}
+
+.overallCardTitle {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overallCardTitle > h1 {
+  transition: 0.2s;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 0px;
+}

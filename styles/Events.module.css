@@ -1,0 +1,512 @@
+.eventsRow {
+  background-color: #cdd9e53a;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75);
+}
+.eventsCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+}
+
+.eventImg {
+  border-radius: 20px;
+}
+.icon {
+  font-size: 48px;
+}
+
+.mainEventInfo p {
+  color: #5588b1;
+}
+
+.date > span {
+  color: #94d40b;
+}
+
+.time > span {
+  color: #154e91;
+}
+
+.place > span {
+  color: #6f747a;
+}
+
+.oldEvents {
+  display: flex;
+  /* flex-direction: column; */
+  margin-bottom: 100px;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.oldEvent {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 50%;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: fit-content;
+  box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75);
+  height: 300px;
+  background-color: #cdd9e53a;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .oldEvent {
+    flex: 1 0 100%;
+  }
+}
+
+.eventImg {
+  margin-left: 40px;
+}
+
+.eventCalendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #acacac;
+
+  width: 200px;
+  height: 200px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.eventCalendar h1 {
+  font-size: 132px;
+  margin-bottom: 0px;
+
+  margin-top: 0px;
+  color: white;
+}
+
+.eventCalendar h3 {
+  font-size: 48px;
+  margin-bottom: -50px;
+  margin-top: 30px;
+  color: white;
+  background-color: #94d40b;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border-top-right-radius: 20px;
+}
+
+/* .eventInfo {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+} */
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: start;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+
+  background-color: #efefef;
+  color: white;
+  /* border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px; */
+  width: 50px;
+}
+
+.social > span {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.fb {
+  color: #154e91;
+}
+
+.insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  width: fit-content;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.whats {
+  color: #94d40b;
+}
+
+.fb:hover,
+.insta:hover,
+.whats :hover {
+  opacity: 0.5;
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.btn > button {
+  width: 100%;
+  background-color: #154e91;
+}
+
+/* @media only screen and (max-width: 1150px) {
+  .oldEvent {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .oldEvent {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .oldEvent {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .oldEvent {
+    width: 98%;
+  }
+} */
+
+@media only screen and (max-width: 700px) {
+  .oldEvent {
+    flex-direction: column;
+    height: 100%;
+  }
+  .eventCalendar {
+    width: 100%;
+    border-top-left-radius: 20px;
+  }
+  .eventCalendar > h3 {
+    border-top-left-radius: 20px;
+  }
+
+  .eventImg {
+    text-align: center;
+  }
+
+  /* .eventInfo {
+    text-align: center;
+  }
+
+  .eventInfo > .btn {
+    position: relative;
+
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+  } */
+}
+
+/* Programs */
+
+.programsContainer {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background: white;
+}
+
+.programRow {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  /* margin-top: 50px; */
+}
+
+.programDescription1,
+.programDescription2 {
+  max-width: 450px;
+  max-height: 350px;
+  line-height: 2;
+  margin-left: 50px;
+  height: 100%;
+  position: relative;
+}
+
+.programDescription1 {
+  margin-right: 50px;
+}
+.programsHeader {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.programsHeader > h1 {
+  font-size: 42px;
+  color: #1a2e49;
+  font-weight: bolder;
+}
+.programDescription1,
+.programDescription2 {
+  margin-bottom: 20px;
+}
+
+.programDescImg2 {
+  margin-right: 50px !important;
+}
+@media only screen and (max-width: 1024px) {
+  .programRow {
+    margin-bottom: 150px;
+  }
+  .programDescImg1,
+  .programDescImg2 {
+    margin-right: 10px !important;
+  }
+  .programDescription1,
+  .programDescription2 {
+    margin-right: 10px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .programsContainer {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .programDescription1,
+  .programDescription2 {
+    margin: auto;
+  }
+}
+.programDescription1 > h2,
+.programDescription2 > h2 {
+  font-size: 32px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+  color: #1a2e49;
+}
+
+.programDescription1 > h3,
+.programDescription2 > h3 {
+  font-size: 24px;
+  color: #1a2e49;
+}
+
+.programDescription1 > h4,
+.programDescription2 > h4 {
+  font-size: 18px;
+  color: #5d85b6;
+}
+
+.programDescription1 > button,
+.programDescription2 > button {
+  margin-top: 20px;
+}
+
+.programDate {
+  text-align: left;
+  width: fit-content;
+  margin: auto;
+}
+
+.programDate > h1 {
+  font-size: calc(3vw + 12px);
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #1a2e49;
+}
+
+.programDate > hr {
+  width: 80px;
+  height: 6px;
+  background-color: #5589ac;
+  margin-right: auto;
+}
+
+.programDate > h2 {
+  font-size: calc(2vw + 12px);
+  color: #1a2e49;
+}
+
+/* Events wallpaper */
+
+.EventsWallpaperDiv {
+  padding-top: 100px;
+}
+
+/* .EventsWallpaperImg {
+  position: fixed !important;
+  z-index: -1;
+} */
+
+/* event */
+.allEvents {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.event {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  margin-bottom: 50px;
+  box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  background-color: #cdd9e53a;
+  position: relative;
+}
+
+.eventDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.eventDate > h1 {
+  font-size: 50px;
+  color: #1a2e49;
+  margin-bottom: 0px;
+}
+.eventDate > hr {
+  width: 80px;
+  height: 6px;
+  background-color: #5589ac;
+}
+.eventDate > h2 {
+  font-size: 140px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #1a2e49;
+}
+
+.eventContactBtn {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.eventContactBtn > button {
+  width: 100%;
+  background-color: #154e91;
+}
+
+.eventimageDiv {
+  text-align: center;
+}
+
+.eventsocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: start;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  color: white;
+  background-color: #cdd9e5;
+  width: 50px;
+}
+
+.eventsocial > span {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.eventInformation {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #1a2e49;
+}
+
+@media only screen and (max-width: 1024px) {
+  .event {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .eventContactBtn {
+    position: relative;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .eventDate {
+    width: 100%;
+  }
+  .eventimage {
+    width: 100% !important;
+  }
+
+  .eventInformation {
+    text-align: center;
+  }
+
+  .eventsocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    margin: 20px;
+    background-color: transparent;
+  }
+}
+
+.eventInformation > h1 {
+  font-size: 32px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+  color: #1a2e49;
+}
+
+.eventInformation > h2 {
+  font-size: 24px;
+  color: #1a2e49;
+}
+
+.eventdetails > div > h3 {
+  font-size: 18px;
+  color: #1a2e49;
+}
+
+@media only screen and (min-width: 1024px) {
+  .eventInformation {
+    margin-top: 20px;
+  }
+  .eventdetails {
+    margin-top: 20px;
+  }
+}

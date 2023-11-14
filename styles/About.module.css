@@ -1,0 +1,250 @@
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  /* width: 100vw; */
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide_track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.AboutWarsheSection {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.AboutdrKhaledGhattasSection {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.AboutdrDesc {
+  /* text-align: right; */
+  margin-top: 20px;
+  line-height: 2;
+
+  color: #5d85b6;
+  font-size: 28px;
+}
+
+.AboutWarsheSection {
+  margin-top: 20px;
+  font-size: 32px;
+}
+.AboutWarsheSection > h1 {
+  font-weight: bolder;
+  font-size: 56px;
+}
+
+.familyHeader {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 90%;
+}
+
+.familyHeader > h1 {
+  font-size: 42px;
+  color: #1a2e49;
+  font-weight: bolder;
+}
+
+.familyHeader > h2 {
+  color: #1a2e49;
+  font-size: 32px;
+}
+
+.familyFooter {
+  width: 100%;
+  background-color: #4d7459;
+  text-align: center;
+}
+
+.familyFooter > div {
+  /* max-width: 30%; */
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.familyFooter > div > h3 {
+  font-size: 18px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.familyFooter > div > button {
+  font-size: 32px;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+.familyFooter > div > button > span {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.feedbackContent > span {
+  max-width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  border: 4px solid white !important;
+  margin: auto !important;
+  margin-top: -50px !important;
+  box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: -1px 10px 39px -8px rgba(0, 0, 0, 0.75) !important;
+}
+
+.feedbackContent {
+  max-width: 80%;
+  margin: auto;
+}
+.feedbackContent > h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #1a2e49;
+}
+
+.feedbackContent > h2 {
+  color: #5d85b6;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width: 500px) {
+  .feedbackContent > h3 {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedbackContent {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+  .feedbackContent {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .feedbackContent {
+    max-width: 95%;
+  }
+}
+
+.feedbackTitle {
+  text-align: center;
+  padding-top: 50px;
+  /* padding-bottom: 50px; */
+}
+
+.feedbackTitle > h1 {
+  color: white;
+}
+
+.familyContainer {
+  position: relative;
+}
+
+/* About wallpaper */
+
+.AboutWallpaperDiv {
+  padding-top: 100px;
+}
+
+.AboutWallpaperImg {
+  z-index: -1;
+}
+
+.AboutWarsheRow {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.AboutWarsheDesc {
+  max-width: 550px;
+  line-height: 2;
+  text-align: right;
+  color: #5d85b6;
+  font-size: 28px;
+  margin-bottom: 5px;
+  text-align: right;
+  margin-right: 0px;
+}
+
+.aboutVideo,
+.aboutVideo > div {
+  max-width: 400px !important;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutVideo > div {
+    width: 100vw !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .AboutWarsheDesc {
+    margin: auto;
+    padding: 20px;
+  }
+}

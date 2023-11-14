@@ -1,0 +1,108 @@
+.contactSection {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mapSection {
+  height: 500px;
+}
+
+@media screen and (max-width: 760px) {
+  .mapSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .mapSection > iframe {
+    width: 100%;
+    /* margin-top: 20px; */
+  }
+}
+
+.mapCol {
+  align-self: self-end;
+}
+
+.infoCol {
+  height: 100%;
+  align-self: self-start;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-around;
+  align-self: start;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contactInfo > div {
+  text-align: center;
+}
+
+.phone,
+.mail,
+.gps {
+  font-size: 24px;
+}
+
+.gps {
+  color: #94d40b;
+}
+
+.mail {
+  color: #154e91;
+}
+
+.phone {
+  color: #6f747a;
+}
+
+.contactForm {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm > button {
+  height: 40px;
+  width: 60%;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 20px;
+  background-color: #5588b1;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm > button > span {
+  margin: 0px;
+  margin-left: 10px;
+}
+.contactForm > button > span[role="img"] {
+  font-size: 24px;
+}
+.contactForm > button:hover {
+  border-color: #6f747a;
+}
+
+.contactForm > button:hover > span {
+  color: #154e91;
+}
+
+.contactForm > button:hover > span[role="img"] {
+  color: #94d40b;
+}
+
+.contactForm > textarea {
+  border-radius: 20px;
+}
+
+/* contact wallpaper */
+.ContactWallpaperDiv {
+  padding-top: 100px;
+}
